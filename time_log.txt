@@ -1,0 +1,21 @@
+28-02:
+16:35-17:00 creating the project and structure, creating postgre docker
+17:00-17:30 creating db schema
+17:30-18:00 creating controller skeletons
+18:00-18:30 creating entities
+18:30-18:50 creating repositories and filter methods
+18:50-19:20 creating services, calling repositories for GET endpoints and calling according services from repositories
+19:20-19:45 creating PATCH endpoint logic with validator annotation
+19:45-20:00 creating DELETE endpoint logic
+
+01-03:
+16:45-17:10 configuring CORS and making it parameterizable
+17:10-17:30 creating DTOs and mappers, using them
+17:30-17:50 creating docker for database
+17:50-18:00 starting application and troubleshooting initial problems
+18:00-18:20 custom exceptions
+18:20-19:30 basic tests
+19:30-19:50 dummy data
+19:50-20:35 dockerize (tutorial: readme.md)
+20:35-21:30 troubleshooting custom annotation validation not triggered issue
+21:30-22:15 minor refinements

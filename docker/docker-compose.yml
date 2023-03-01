@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  mcsibi-hr-db:
+    image: postgres:14.1-alpine
+    environment:
+      - POSTGRES_USER=hr
+      - POSTGRES_PASSWORD=123hr
+    ports:
+      - '5439:5432'
+    volumes:
+      - mcsibi-hr-db:/var/lib/postgresql/data
+      - "./init.sql:/docker-entrypoint-initdb.d/init.sql"
+  mcsibi-hr:
+    image: avinty/hr
+    environment:
+      - DB_URL=jdbc:postgresql://mcsibi-hr-db:5432/hr
+    ports:
+      - '8085:8085'
+volumes:
+  mcsibi-hr-db:
+    driver: local

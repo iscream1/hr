@@ -1,0 +1,22 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /api/v1
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: none
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5439/hr}
+    username: hr
+    password: 123hr
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    default-schema: hr
+    change-log: classpath:db/master.xml
+
+application:
+  cors-origin: http://localhost:5000/
