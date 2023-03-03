@@ -19,3 +19,14 @@
 19:50-20:35 dockerize (tutorial: readme.md)
 20:35-21:30 troubleshooting custom annotation validation not triggered issue
 21:30-22:15 minor refinements
+
+Task 2:
+02-03:
+19:00-19:40 tables
+19:40-20:00 indexes, constraints
+20:00-20:25 trigger
+20:25-20:40 update script
+
+03-03:
+16:00-16:30 dummy data
+16:30-16:50 db diagram
